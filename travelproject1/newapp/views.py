@@ -46,7 +46,6 @@ def register(request):
         else:
             messages.info(request, 'user created ')
             return redirect('register')
-
         return redirect('/')
     return render(request,"register.html")
 def logout(request):
